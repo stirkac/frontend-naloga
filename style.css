@@ -1,0 +1,292 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,100&subset=latin,latin-ext);
+
+/*
+	--oranza: #ff9c00;
+	--modra: #1bb0ce;
+	--hover: #ff3783;
+	--siva: #f3f3f3;
+*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f3f3f3;
+}
+
+ul, li, ol{
+	display:inline
+}
+
+small {
+	color: #666;
+}
+
+body > .container {
+	padding-top: 3em;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+.btn-orange{
+	color: white;
+	background-color: #ff9c00;
+	border-color: #ff9c00;
+}
+.btn-orange:hover{
+	background-color: #ff3783;
+	color:  #FFF;
+	border-color: #ff3783;
+}
+
+.btn-orange-o {
+	background-color: white;
+	border-color: #ff9c00;
+	color:  #ff9c00;
+}
+.btn-orange-o:hover{
+	color: white;
+	background-color: #ff3783;
+	border-color: #ff3783;
+}
+
+.btn-social {
+	margin-top: 1em;
+}
+
+.form-control::-webkit-input-placeholder { color: white; 
+	font-style: italic;
+	font-weight: 100; }
+.form-control:-moz-placeholder { color: white; 
+	font-style: italic;
+	font-weight: 100; }
+.form-control::-moz-placeholder { color: white; 
+	font-style: italic;
+	font-weight: 100; }
+.form-control:-ms-input-placeholder { 
+	color: white; 
+	font-style: italic;
+	font-weight: 100; 
+}
+
+#banner {
+	width: 100%;
+	height: 1em;
+  background-color: #1bb0ce;   
+}
+
+.navbar-top {
+	background-color: white;
+  height: 8em;
+  z-index: 1;
+}
+
+.navbar-nav li a {
+ line-height: 2.1em;
+}
+
+#top-navbar{
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 2em;
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+#logo{
+	height: 4.5em;
+}
+
+#search{
+	background-color: #f3f3f3;
+	border-color: #f3f3f3;
+	margin-right: 20px;
+  width: 120px;
+}
+
+#search::-webkit-input-placeholder { color: black;
+		font-weight: 100;
+		font-style: normal;
+}
+#search:-moz-placeholder { color: black;
+		font-weight: 100;
+		font-style: normal; 
+}
+#search::-moz-placeholder { color: black;
+		font-weight: 100;
+		font-style: normal; 
+}
+#search:-ms-input-placeholder { color: black;
+		font-weight: 100;
+		font-style: normal; 
+}
+
+#loginbox input{
+	background-color: #1bb0ce;
+}
+
+.panel{
+	border: none;
+}
+	.panel-body{
+		background-color: white;
+	}
+	.panel-body h1{
+		color: #1bb0ce;
+		font-weight: 100;
+	}
+
+	#ornament{
+		margin: -1 auto;
+		text-align: center;
+	}
+
+
+#form > div {
+    margin-bottom: 25px;
+}
+
+#form > div:last-child {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#form label {
+	text-transform: uppercase;
+}
+
+.panel {
+	border-top: solid #ff9c00;
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+  background-color: transparent;
+}
+
+.padding {
+	padding: 1em;
+}
+
+.panel-body {
+    padding-top: 30px;
+}
+
+#back {
+  position: fixed;
+  bottom: 7em;
+  left: 2em;
+}
+
+#back-button{
+  background-color: #ff3783;
+  border-color: #ff3783;
+  color: white;
+}
+#back-button:hover{
+	background-color: white;
+	color: black;
+}
+
+.footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	max-height: 60px;
+}
+.push{
+	height: 60px;
+}
+
+#footer{
+	line-height: 5em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+	color: white;
+	background-color: #1bb0ce;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+	#footer .btn{
+		margin-top: 1.5em; 
+		color: #1bb0ce;
+	}
+	#footer span {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	#footer li {
+		display: inline;
+		list-style-type: none;
+		padding-right: 20px;
+	}
+	#footer a {
+		color: white;
+	}
+	#footer a:hover {
+		color: #1bb0ce;
+	}
+
+/* lg */
+@media only screen and (max-width: 1200px){
+    #logo{
+    	position: absolute;
+    	top: 20px;
+    	left: 10px;
+    }
+    #top-navbar {
+    	padding-left: 10em;
+  		padding-right: 0;
+  	}
+
+    #search{
+			margin-right: 15px;
+    	width: 90px;
+    }
+    #footer {
+			padding-left: 5%;
+			padding-right: 0;
+    }
+}
+
+/* md */
+@media only screen and (max-width: 992px){
+		#form button {
+			width: 100%;
+		}
+
+    #footer {
+			padding-left: 0;
+			padding-right: 0;
+    }
+	    #footer li {
+	    	padding-right: 10px;
+	    }
+
+    #search-form {
+    	display: none;
+    }
+}
+
+/* sm */
+@media only screen and (max-width: 768px){
+  #top-navbar {
+  	padding-left: 0em;
+  }
+
+	#back {
+		margin-bottom: 20px;
+		position: relative;
+		bottom: 5px;
+		left: 15px;
+	}
+
+	#footer {
+		display: none;
+	}
+		#footer ul {
+			margin: 0; 
+			padding-left: 1em;
+		}
+}
+
